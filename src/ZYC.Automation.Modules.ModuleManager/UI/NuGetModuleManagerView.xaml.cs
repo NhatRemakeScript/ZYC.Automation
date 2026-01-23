@@ -1,6 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using ZYC.Automation.Abstractions;
+using ZYC.Automation.Abstractions.BusyWindow;
 using ZYC.Automation.Abstractions.Notification.Toast;
+using ZYC.Automation.Core.Localizations;
 using ZYC.Automation.Modules.ModuleManager.Abstractions;
 using ZYC.Automation.Modules.ModuleManager.Commands;
 using ZYC.Automation.Modules.NuGet.Abstractions;
@@ -12,12 +14,16 @@ namespace ZYC.Automation.Modules.ModuleManager.UI;
 internal sealed partial class NuGetModuleManagerView
 {
     public NuGetModuleManagerView(
+        NuGetConfig nugetConfig,
+        IAppBusyWindow appBusyWindow,
         IToastManager toastManager,
         IAppLogger<NuGetModuleManagerView> logger,
         RefreshNuGetModuleCommand refreshNuGetModuleCommand,
         INuGetModuleManager nuGetModuleManager,
         INuGetManager nuGetManager)
     {
+        NugetConfig = nugetConfig;
+        AppBusyWindow = appBusyWindow;
         ToastManager = toastManager;
         Logger = logger;
         RefreshNuGetModuleCommand = refreshNuGetModuleCommand;
@@ -25,6 +31,8 @@ internal sealed partial class NuGetModuleManagerView
         NuGetManager = nuGetManager;
     }
 
+    private NuGetConfig NugetConfig { get; }
+    private IAppBusyWindow AppBusyWindow { get; }
     private IToastManager ToastManager { get; }
     private IAppLogger<NuGetModuleManagerView> Logger { get; }
     private RefreshNuGetModuleCommand RefreshNuGetModuleCommand { get; }
@@ -45,6 +53,9 @@ internal sealed partial class NuGetModuleManagerView
 
     public async Task RefreshNuGetModulesAsync()
     {
+        var handler = AppBusyWindow.Enqueue();
+
+        handler.Title = $"{L.Translate("Fetching NuGet packages from")} {NugetConfig.Source}";
         try
         {
             var modules = await NuGetModuleManager.GetModulesAsync();
@@ -60,6 +71,10 @@ internal sealed partial class NuGetModuleManagerView
         {
             ToastManager.PromptException(e);
             Logger.Error(e);
+        }
+        finally
+        {
+            handler.Close();
         }
     }
 }
